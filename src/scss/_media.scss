@@ -1,0 +1,76 @@
+/* Large Devices, Wide Screens */ 
+@media only screen and (max-width: 1280px) { 
+
+    .header__navigation img {
+      opacity: 0;
+    }
+  } 
+  
+  /* Medium Devices, Desktops */ 
+  @media only screen and (max-width: 992px) { 
+  } 
+  
+  /* Small Devices, Tablets */ 
+  @media only screen and (max-width: 768px) {
+  
+    .main-header .conteiner-header .header__top {
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .main-header .conteiner-header .header__top .phone-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .header__tytle {
+      margin: auto;
+      max-width: 540px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .header__main-character {
+      opacity: 0;
+    }
+  
+    .main-header .conteiner-header .header__top .logo {
+      font-size: 36px;
+  
+    }
+  
+    .navigation__list {
+      margin-top: 20px;
+    }
+  
+  } 
+  
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width: 480px) { 
+  
+    .header__navigation {
+      display: none;
+    }
+  
+    .main-header .conteiner-header .social-network {
+      margin: auto;
+      display: flex;
+      top: 16%;
+      left: 35%;
+    }
+  
+    .social__item:not(:first-child) {
+      margin-left: 20px;
+    }
+  
+    .header__tytle p {
+      margin-top: 17px;
+      font-weight: 300;
+      font-size: 25px;
+    }
+  
+  } 
+  
+  /* Custom, iPhone Retina */ 
+  @media only screen and (max-width: 320px) { 
+  }
