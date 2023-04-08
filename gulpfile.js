@@ -37,7 +37,7 @@ function buildHtml() {
 
 // Таск копирования статичных файлов
 function copy() {
-    return src(['src/img/**/*.png']).pipe(dest('dist/img'));
+    return src(['src/img/**/*.*']).pipe(dest('dist/img'));
 }
 
 // Таск очистки dist
