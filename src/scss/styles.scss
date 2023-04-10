@@ -6,6 +6,7 @@
   color: #fff;
   font-family: 'Montserrat';
   font-style: normal;
+  cursor: pointer;
 }
 
 .main-header {
@@ -41,25 +42,13 @@
         position: relative;
       }
 
-      .header__navigation img {
-        position: absolute;
-        left: 494px;
-        top: 20px;
-        max-width: 32px;
-        max-height: 32px;
-      }
-
       .navigation__list {
         display: flex;
         list-style: none;
-
-        .navigation__item:not(:last-child) {
-          margin-right: 28px;
-        }
-
-        .navigation__item .masters {
-          color: #00BF78;
-          } 
+        min-width: fit-content;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 10px 28px;
 
         .navigation__link {
           font-style: normal;
@@ -69,7 +58,7 @@
           color: #333333;
         }
         
-        .navigation__link:active {
+        .navigation__link:hover {
           color: #00BF78;
         }
         
@@ -114,7 +103,6 @@
         line-height: 24px;
         color: #333333;
       }
-      
       
       .button_large {
         padding: 17px 30px;
@@ -289,6 +277,7 @@
 .section__popular-services {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
   .card-service {
     max-width: 350px;
@@ -329,9 +318,6 @@
 
   }
 
-  .with-margin {
-    margin-left: 30px;
-  }
 }
 
 
@@ -430,6 +416,8 @@
 
   .section__cards-masters {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     padding-bottom: 80px;
 
     .section__card-master {
@@ -488,10 +476,6 @@
         font-weight: 300;
         font-size: 12px;
         line-height: 15px;}
-    }
-
-    .section__card-master:not(:first-child) {
-      margin-left: 30px;
     }
   }
 }
