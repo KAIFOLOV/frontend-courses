@@ -4,9 +4,25 @@ const browserSync = require('browser-sync').create();
 const clean = require('gulp-clean');
 
 // Таск компиляции SASS в CSS
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+
 function buildSass() {
     return src('src/scss/**/*.scss')
-        .pipe(sass())
+        .pipe(sourcemaps.init())
+        .pipe(sass({ includePaths: ['./node_modules'] }).on('error', sass.logError))
+        .pipe(
+            postcss([
+                autoprefixer({
+                    grid: true,
+                    overrideBrowserslist: ['last 2 versions']
+                }),
+                cssnano()
+            ])
+        )
+        .pipe(sourcemaps.write())
         .pipe(dest('src/css'))
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
@@ -21,7 +37,7 @@ function buildHtml() {
 
 // Таск копирования статичных файлов
 function copy() {
-    return src(['src/img/**/*.png']).pipe(dest('dist/img'));
+    return src(['src/img/**/*.*']).pipe(dest('dist/img'));
 }
 
 // Таск очистки dist
