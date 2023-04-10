@@ -68,10 +68,6 @@ footer {
   gap: 10px 28px;
 }
 
-.navigation li:not(:last-child) {
-
-}
-
 .navigation a {
   font-style: normal;
   font-weight: 500;
@@ -80,6 +76,9 @@ footer {
   color: #333333;
 }
 
+.navigation a:hover {
+  color: #00BF78;
+}
 .phone-info {
   text-align: right;
 }
