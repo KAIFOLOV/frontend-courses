@@ -1,12 +1,3 @@
-/* Large Devices, Wide Screens */ 
-@media only screen and (max-width: 1280px) { 
-
-  } 
-  
-  /* Medium Devices, Desktops */ 
-  @media only screen and (max-width: 992px) { 
-  } 
-  
   /* Small Devices, Tablets */ 
   @media only screen and (max-width: 768px) {
   
@@ -39,13 +30,126 @@
     .navigation__list {
       margin-top: 20px;
     }
-  
+
+    .section .container-section .section__header .section__tytle {
+      padding-top: 94px;
+      padding-bottom: 16px;
+      text-align: center;
+    }
+
+    .section__text-tytle {
+      margin: auto;
+      text-align: center;
+    }
+
+    .section__text-paragraph {
+      display: none;
+    }
+
+    .section .container-section .section__content .section__image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      &-bacground {
+        align-items: center;
+      }
   } 
+
+  .section .container-section .section__content .section__image .section__image-play {
+    margin: auto;
+  }
+
+  .section__popular-services {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .section .container-section .section__content .section__cards {
+    margin-top: 80px;
+  }
+
+  .navigation__section .navigation__list {
+    justify-content: center;
+  }
+
+  .section__services-cost {
+    justify-content: center;
+  }
+
+  .section__services-cost .section__services-cost-left {
+    margin-right: 0px;
+  }
+
+  .section-masters__tytle-description {
+    text-align: center;
+  }
+
+  .section-masters .section__cards-masters {
+    justify-content: center;
+  }
+
+  .section-examples .section__header {
+    justify-content: center;
+  }
+
+  .section-examples .section__content-examples .section__slider {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .section__header {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .section-contact .section__header .social-network_gorizontal {
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .section-contact .contact-form {
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+  }
+
+  .footer { 
+    margin-top: 40px;
+  }
+
+  .copy {
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .container-footer .copy p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+
+  footer .container-footer .navigation-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 2px;
+  }
+
+  .navigation-footer a {
+    color: #333333;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
   
   /* Extra Small Devices, Phones */ 
   @media only screen and (max-width: 480px) { 
   
-    .header__navigation {
+    .navigation__header {
       display: none;
     }
   

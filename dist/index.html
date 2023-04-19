@@ -20,7 +20,7 @@
           
           <a href="#" class="logo">Мир красоты</a>
 
-          <nav class="navigation header__navigation">
+          <nav class="navigation navigation__header">
             <ul class="navigation__list">
               <li class="navigation__item"><a class="navigation__link" href="#">Услуги и цены </a></li>
               <li class="navigation__item"><a class="navigation__link masters" href="#">Мастера</a></li>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="header__tytle">
-          <h1>Создай свой образ вместе с нами</h1>
+          <h1 class="header__h1">Создай свой образ вместе с нами</h1>
           <p>Идеальный образ за 60 минут</p>
           <button class="button button_large" type="button" name="button">Записаться онлайн</button>
         </div>
@@ -168,7 +168,7 @@
         <div class="section__header">
           <h2 class="section__tytle">Услуги и цены</h2>
 
-          <nav class="navigation section__navigation">
+          <nav class="navigation navigation__section">
             <ul class="navigation__list">
               <li class="navigation__item"><a class="navigation__link" href="#">Стрижка и укладка</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#">Косметология</a></li>
@@ -289,7 +289,121 @@
 
       </div>
 
+
     </section>
+
+    <section class="section section-examples">
+      <div class="container-section section-examples-container">
+
+        <div class="section__header">
+          <h2 class="section__tytle">Наши работы</h2>
+
+          <div class="section__header-button">
+            <button class="header-button"> <img src="img/arrow-left.png" alt=""></button>
+
+            <button class="header-button"> <img src="img/arrow-right.png" alt=""></button>
+          </div>
+        </div>
+
+        <div class="section__content-examples">
+          <div class="section__slider">
+
+            <div class="section__slider-item">
+              <div class="section__slider-item-img">
+                <a href=""> 
+                  <div class="section__slider-item-img-descr"> <img class="section__slider-item-img2" src="img/lupa.png" alt=""> <p>Увеличить</p> </div> 
+                  <img class="section__slider-item-img1" src="img/example1.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="section__slider-item">
+              <div class="section__slider-item-img">
+                <a href=""> 
+                  <div class="section__slider-item-img-descr"> <img class="section__slider-item-img2" src="img/lupa.png" alt=""> <p>Увеличить</p> </div> 
+                  <img class="section__slider-item-img1" src="img/example2.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="section__slider-item">
+              <div class="section__slider-item-img">
+                <a href=""> 
+                  <div class="section__slider-item-img-descr"> <img class="section__slider-item-img2" src="img/lupa.png" alt=""> <p>Увеличить</p> </div> 
+                  <img class="section__slider-item-img1" src="img/example3.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="section__slider-item">
+              <div class="section__slider-item-img">
+                <a href=""> 
+                  <div class="section__slider-item-img-descr"> <img class="section__slider-item-img2" src="img/lupa.png" alt=""> <p>Увеличить</p> </div> 
+                  <img class="section__slider-item-img1" src="img/example4.png" alt="">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="section-examples__brends">
+            <p class="section-examples__brends-tytle">Бренды, которые мы используем в работе:</p>
+            <div class="brends">
+              <img src="img/brends1.png" alt="">
+              <img src="img/brends2.png" alt="">
+              <img src="img/brends3.png" alt="">
+              <img src="img/brends4.png" alt="">
+              <img src="img/brends5.png" alt="">
+            </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </section>
+
+  <section class="section section-contact">
+    <div class="container-section container-section-contact">
+      <div class="section__header">
+        <h2 class="section__tytle">Контакты</h2>
+        <p class="section__tytle-adress">Томск, проспект Ленина, дом 13</p>
+        <a class="section__tytle-tel" href="tel:84996861762">8 (499) 686-17-62</a>
+        <a class="section__tytle-email" href="info@more-krasoty.ru">info@more-krasoty.ru</a>
+        <p class="section__tytle-text">Мы в социальных сетях:</p>
+
+        <ul class="social-network social-network_gorizontal">
+          <li class="social__item"> <a class="social__link" href=""> <img src="img/Vk.png" alt=""> </a> </li>
+          <li class="social__item"> <a class="social__link" href=""> <img src="img/Inst.png" alt=""> </a> </li>
+          <li class="social__item"> <a class="social__link" href=""> <img src="img/YouTube.png" alt=""> </a> </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label>
+          <h3 class="contact-form__tytle">Быстрая запись</h3>
+          <p class="contact-form__text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
+        </label>
+
+        <label>
+          <input type="text" class="name formEntry" placeholder="Ваше имя" name="name" required>
+        </label>
+    
+        <label>
+          <input type="text" class="phone formEntry" placeholder="+7 (___) ___-__-__" name="phone" required>
+        </label>
+    
+        <button class="button contact-form__button">Записаться</button>
+
+        <label>
+          <p class="contact-form__footer">Нажимая на кнопку вы соглашаетесь с обработкой персональных данных</p>
+        </label>
+      </form>
+    </div>
+  </section>
+
 
 
     <footer>
@@ -312,6 +426,8 @@
       </div>
     </footer>
 
+
+  <script src="./js/dom.js"></script>
   </body>
 
 
